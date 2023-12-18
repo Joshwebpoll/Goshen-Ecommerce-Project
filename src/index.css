@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,400&display=swap");
+
+* {
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden !important;
+}
+body{
+    overflow-x: hidden !important;
+}
+
+.cartcol {
+  background: #fca120;
+}
+.bgfixed {
+  background: #e7e9eb;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
+    0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11),
+    0 8px 16px rgba(0, 0, 0, 0.11);
+}
+
+.stack {
+  position: absolute;
+  top: 15px;
+  right: 70px;
+  height: 1.5rem;
+  display: inline-block;
+}
+.img-style {
+  height: 150px;
+  object-fit: cover;
+}
+.btn-primary {
+  background: #fca120 !important;
+  border: none !important;
+  outline: none !important;
+}
+.pricecol {
+  background: #eeeeee;
+  padding: 0.5rem;
+  border-radius: 10%;
+}
+.cate {
+  background: #eeeeee;
+  padding: 0.5rem;
+  border-radius: 10%;
+  /* margin-left: 3.5rem;  */
+}
+.deleteach{
+    color: #fca120;
+    cursor: pointer;
+}
+.cartimg {
+  width: 100%;
+  border-radius: 0.2rem;
+  object-fit: cover;
+  width: 60px;
+  height: 60px;
+}
+.searchinput:focus {
+  outline-color: #fca120 !important;
+  
+  
+}
+.searchinput{
+     border: 2px solid #D1D5DB;
+     border-radius: .2rem;
+}
+.searchinput::placeholder{
+    background: #F9FAFB;
+}
+.btntop {
+  margin-top: 5rem;
+}
+
+/* Loading Spinner */
+
+.loader {
+  width: 80px;
+  height: 80px;
+  border: 6px solid #fca120;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .stack {
+    position: absolute;
+    top: 15px;
+    right: 5px;
+    height: 1.5rem;
+    display: inline-block;
+  }
+  .inputcontainer{
+    width: 100vh;
+  }
+  .searchinput {
+    width: 100% !important;
+  }
+  .btntop{
+    flex-wrap: wrap;
+    gap: 3px;
+  }
+}
